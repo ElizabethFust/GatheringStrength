@@ -1,0 +1,23 @@
+/*Comm elements across all pages*/
+body {
+    background-color:#EAEDDE; /*eggshell on  Coolers.co*/
+}
+
+#heading {
+    font-size: 52px;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #6B4E71; /*dim gray on Coolers.co*/
+    text-align: center;
+    background-color: #C5CBD3;
+}
+#subheading {
+    font-size: 48px;
+    color: #6B4E71; /*dim gray on Coolers.co*/
+    text-align: center;
+}
+h2 {
+    font-size: 20px;
+    color:#6B4E71; /*dim gray on Coolers.co*/
+    text-align: center;
+}
+}

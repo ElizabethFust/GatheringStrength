@@ -1,29 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Gathering Strength</title>
         <link rel="stylesheet" href="../normalize.css"/>
-        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/style.css"  type="text/css"/>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
         
-        <style>
-        
-        </style>
-    </head>
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Racing+Sans+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600i" rel="stylesheet"> 
 
-    <body>
-        <div id="heading">
-        <h1>Gathering Strength, Inc.</h1>
+    <title>Gathering Strength</title>
+</head>
+
+ <body>
+     <!-- Navbar -->
+
+   <nav class="sticky navbar navbar-light d-flex p-2">
+       <!-- <div id="circle" class="navbar-brand ml-4">
+          <div id="circle">
+              <div id="increase-wrapper">
+                      <div class="crescentLarge"></div>
+                      <div class="crescentMed"></div>
+                      <div class="crescentSmall"></div>
+                      </div>
+              </div>
+              </div> -->
+      <ul class="wrapper d-flex align-items-start flex-column p-2 list-unstyled">
+        <li>  <div id="circle">
+                  <!-- <div id="increase-wrapper">
+                          <div class="crescentLarge"></div>
+                          <div class="crescentMed"></div>
+                          <div class="crescentSmall"></div>
+                          </div> -->
+                  </div>
+                  </div></li>
+        <li><a class="heading navbar-brand ml-5" href="#">Gathering Strength</a></li>
+        <li><h3 class="subtitle ml-5 pl-4">For living your best life</h3></li>
+      </ul>
+      <div class="container-nav d-inline-flex p-2">
+        <ul class="d-inline-flex p-2 list-unstyled list-inline flex-column flex-sm-row"> 
+          <li><a class="btn btn-dark ml-2 mb-1" href="#about" role="button">About</a></li>
+          <li><div class="btn-group ml-2">
+              <a type="button" class="btn btn-dark mb-1" href="#inspired" role="button">Get Inspired</a>
+             <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split mb-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+             </button>
+             <div class="dropdown-menu">
+              <a class="dropdown-item" href="testimonials.html">Stories/Video</a>
+              <div class="dropdown-divider"></div>
+            </div>
+          </div>
+           <li><a class="btn btn-dark ml-2 mb-1" href="#resources" role="button">Resources</a></li>
+           <li><a class="btn btn-dark ml-2 mb-1" href="#contact" role="button">Contact Us</a></li>
+          <li><button type="button" class="btn btn btn-light ml-2">Support the Mission!</button></li>
+        </ul> 
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- <div class="header"> -->
+      <div class="header container-fluid p-5 d-flex flex-column"> 
+        <h1 id="secondary-heading">Find Your Strength</h1>
+
+        <h1 id="subheading">Live Well</h1>
+      </div>
+    
+        <!-- End of Header -->
+
+    <!-- About -->
+    
+    <div id="about" class="secondary-heading container-fluid p-5 text-center">
+       <h3>Accessible Fitness and Wellness for People with Disabling Conditions</h3>
+       <div class="row text-left pt-2 d-flex">
+          <div class="col-lg mx-5">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis pulvinar quam, pharetra molestie turpis ultrices eu. Sed dictum arcu orci, ac laoreet ex iaculis sed. Nulla ac lacus purus. Quisque pellentesque sollicitudin tempus. Nullam scelerisque gravida lectus. Integer ut nisi nec sapien sodales faucibus vehicula vitae leo. Nullam vestibulum ante est, a aliquet dolor pharetra ac.</p>
+          </div>
+          <div class="col-lg mx-5">
+            <p>Curabitur molestie suscipit libero at dapibus. Donec ac diam sit amet ante dignissim porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam placerat sollicitudin urna, eget viverra massa aliquet id. Aliquam eget malesuada turpis. Integer et cursus quam. Nam et rutrum arcu. Cras vulputate congue magna, sit amet accumsan dui consequat at.</p>
+          </div>
+         
+    </div>
+
+    <!-- End of About -->
+
+    <!-- Testimonials -->
+    <!-- see example of carousel code from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+
+  <div id="inspired" class="container-fluid p-5 text-center">
+      <h3 class="pb-5">Get Inspired!</h3>
+
+      <div class="container">
+        <div class="row d-flex">
+          <div class="gallery col-lg d-flex flex-column align-items-center">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner border border-dark">
+            <div class="carousel-item active">
+              <img class="d-block h-100 w-100" src="Images/weightbench.JPG" alt="Woman on weight bench doing bicep curl. Wheelchair beside her">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5><a class="test-link" href="testimonials.html">Liz</a></h5>
+                  <p>T7 Spinal Cord Injury</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block h-100 w-100" src="Images/TomAfterWalking.jpg" alt="Man standing in parallel bars preparing to take steps">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5><a class="test-link" href="testimonials.html">Tom</a></h5>
+                  <p>C4 Incomplete SCI</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block h-100 w-100" src="Images/ray-FES.jpg" alt="Man exercising on recumbant stepper called Nustep">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5><a class="test-link" href="testimonials.html">Raymond</a></h5>
+                  <p>Stroke</p>
+                </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+                 
         </div>
-        <div id="subheading">
-        <p><h2>Accessible Fitness and Wellness for People with Disabling Conditions</h2></p>
+        <p class="text-center font-weight-bold mt-3 mb-0">Hover over the picture to pause the scrolling.</p> 
+        <p class="text-center font-weight-bold"> Click the name to see each person's story and a video or picture.</p>
         </div>
-        <p>asdkjflaskjdf</p>
-         </div>
+        <div class="join col-lg text-left">
+           <p>Gathering Strength, Inc., helps people with disabling conditions, such as stroke and spinal cord injuries, with access to fitness and wellness activities.</p>
+          <p>Click on a name to see some of their stories.  </p>
+           <div class="sign-up p-2">
+           <p class="sign-up-para p-2">Sign up to receive alerts about upcoming events and opportunities sponsored by Gathering Strength, Inc.</p>
+           <button type="button" class="btn btn-dark d-block mx-auto">Sign Up</button>
+          </div>
+        </div>
+  </div>
+    <!-- End of Testimonials -->
 
 
+    <!-- Resources -->
+
+  <div id="resources" class="container-fluid p-5 text-center">
+    <h3>Resources</h3>
+
+  </div>
+    <!-- End of Resources -->
+
+    <!-- Footer with Contact Info -->
+
+   <div id="contact" class="container-fluid">
+    <p>[Footer with Contact info goes here]</p>
+    </div>
 
 
+    <!-- End of Footer -->
 
-    </body>
+ 
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <script src="JS/jquery-3.3.1.min.js"></script>
+    <script src="JS/GS.js"></script></script>
+</body>
 </html>

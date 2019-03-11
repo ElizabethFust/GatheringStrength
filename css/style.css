@@ -1,0 +1,246 @@
+/* ====================
+     Custom CSS 
+=======================*/
+
+/*================== 
+Base Element Styles
+====================*/
+
+body {
+    background: #FEFEE7 !important; /*dance with you by stephen caver on Coulorlovers*/
+}
+
+/*===================
+ Base Layout Styles
+ ===================*/
+
+    /* Navbar */
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#circle {
+    display: none;
+}
+
+.heading {
+       font-family: 'Open Sans', sans-serif; /*'Racing Sans One', cursive; /*'Open Sans', sans-serif;*/
+    font-style: italic;
+    color: #0F0F0D; /*Ay, la policia by stephen Caver on colourlovers */
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    z-index: 10000;
+    position: relative;
+            }
+
+.navbar {
+    height: 10em;
+    background:#72C4B9; /*linear-gradient(#72C4B9, #A4D0C4); /*dance with you by stephen caver on Coulorlovers*/
+}
+
+ .subtitle {
+    font-family: 'Open Sans', sans-serif; /*'Racing Sans One', cursive;*/
+    font-weight: bold;
+} 
+
+.btn {
+    font-family: "Roboto", sans-serif;
+    color: #0F0F0D;
+}
+
+#secondary-heading {
+    display: none;
+}
+
+#subheading {
+    display: none;
+}
+
+.sign-up {
+    border-radius: 2%;
+}
+/* Header and background image*/
+
+
+
+/*Testimonials Carousel*/
+
+    .carousel-inner {
+        height: 400px;
+        width: 300px;
+    }
+
+    .join {
+        font-size: 1.5em;
+    }
+
+    .sign-up {
+        background:#A4D0C4;
+ 
+    }
+
+    /* .carousel-item {
+        
+    } */
+
+    /*see example of carousel code from https://www.w3schools.com/howto/howto_js_slideshow.asp*/
+
+/*Modal*/
+
+
+/*Resources*/
+
+/*===================
+ Media Queries
+ ===================*/
+
+/* Medium devices (landscape tablets) and up */
+ 
+@media only screen and (max-width: 50em) {
+    #circle {
+        display: none;
+    }
+
+    #secondary-heading {
+        color: black;
+    }
+
+    #subheading {
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 32em) {
+    .heading {
+        font-size: 1.5em !important;
+        padding-left: 0;
+    }
+}
+
+
+@media only screen and (max-width: 47em) {
+  
+  .heading {
+      font-size: 3em !important;
+  }
+
+ }
+
+ @media only screen and (min-width: 48em) {
+
+  #about {
+      padding-top: 10em;
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+    .heading {
+        font-size: 3.5em !important;
+    }
+
+    #secondary-heading {
+        font-family: 'Open Sans', sans-serif !important;
+        color: white;
+        font-weight: bold; 
+        display: flex;
+        }
+    
+     #subheading {
+            font-family: 'Open Sans', sans-serif !important;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            margin-bottom: 90px; 
+            }
+
+     .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../Images/dreamstime_m_96251115.jpg);
+        /* background-repeat: no-repeat;
+        background-attachment: scroll; */
+        background-position: center;
+        opacity: .6;
+        /* -webkit-background-size: cover;
+        -moz-background-size: cover; */
+        background-size: cover;
+        /* -o-background-size: cover; */
+        min-height: 100vh;
+        }
+
+        #increase-wrapper {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+        }
+        
+        #circle {
+            height: 100px;
+            width: 100px;
+            /*background-color: #EB6841;#FFD599 Sunset by Alpen on Colourlovers. also tried #EB6841 caribic sun by DesignJunkee on Colourlovers*/
+            border-radius: 50%;
+            background: /*linear-gradient(to right, #D1E7D6, 25%, #EB6841);*/ linear-gradient(90deg, /* #FEFEE7 #D1E7D6*/#72C4B9, #EB6841 );
+            /* opacity: 0; */
+            position: absolute;
+            z-index: 1;
+        }
+        
+            .crescentSmall {
+                position: absolute;
+                height: 50px;
+                width: 50px;
+                opacity: .2;
+                border-radius: 50%;
+                border: 12px solid transparent;
+                border-right-color: #EB6841;
+                z-index: auto;
+                top: 50%;
+                transform: translatey(-52%);
+                left: 11%;
+            }  
+            
+                .crescentMed {
+                position: absolute;
+                height: 75px;
+                width: 75px;
+                opacity: .4;
+                border-radius: 50%;
+                border: 14px solid transparent;
+                border-right-color: 0,-1em, 1em,#EB6841;
+                z-index: auto;
+                top: 50%;
+                transform: translatey(-50%);
+                right: 21%;
+            }
+            
+                .crescentLarge {
+                position: absolute;
+                height: 120px;
+                width: 120px;
+                opacity: .4;
+                border-radius: 50%;
+                border: 16px solid transparent;
+                border-right-color: #EB6841;
+                z-index: auto;
+                top: 50%;
+                transform: translatey(-50%);
+                right: 6%;
+            }
+ }

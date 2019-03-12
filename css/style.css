@@ -9,7 +9,13 @@ Base Element Styles
 body {
     background: #FEFEE7 !important; /*dance with you by stephen caver on Coulorlovers*/
 }
+ p {
+     font-family: 'Roboto', sans-serif;
+ }
 
+footer {
+    background: #72C4B9;
+}
 /*===================
  Base Layout Styles
  ===================*/
@@ -76,32 +82,66 @@ body {
 
 
 
-/*Testimonials Carousel*/
+/*Get Inspired*/
 
     .carousel-inner {
         height: 400px;
         width: 300px;
     }
 
-    .join {
-        font-size: 1.5em;
-    }
-
-    .sign-up {
+    .alertcol {
         background:#A4D0C4;
- 
+        font-size: 1.2em;
     }
 
-    /* .carousel-item {
-        
-    } */
-
-    /*see example of carousel code from https://www.w3schools.com/howto/howto_js_slideshow.asp*/
-
-/*Modal*/
-
-
+    .alertbutton {
+        margin: 0 auto;
+    }
 /*Resources*/
+
+/*sticky footer*/
+
+
+
+/*Contact and Sign Up Form*/
+
+#contact {
+    padding: 1em;
+}
+
+form {
+    border: 1px solid black;
+    padding-left: 1em;
+}
+ 
+.inputfield {
+    width: 150px;
+}
+
+.formtitle {
+    text-align: left;
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+
+input {
+    background-color: #FEFEE7;
+}
+
+input[type="checkbox"] {
+    width: 1.5em;
+    height: 1.25em;
+    padding: 1em;
+}
+
+.alerts {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.formsubtitle {
+    margin: 0;
+}
 
 /*===================
  Media Queries

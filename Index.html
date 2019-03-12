@@ -18,6 +18,7 @@
     <title>Gathering Strength</title>
 </head>
 
+<div class="pagewrap">
  <body>
      <!-- Navbar -->
 
@@ -75,7 +76,7 @@
 
     <!-- About -->
     
-    <div id="about" class="secondary-heading container-fluid p-5 text-center">
+    <div id="about" class="secondary-heading container-fluid pt-5 text-center">
        <h3>Accessible Fitness and Wellness for People with Disabling Conditions</h3>
        <div class="row text-left pt-2 d-flex">
           <div class="col-lg mx-5">
@@ -84,8 +85,8 @@
           <div class="col-lg mx-5">
             <p>Curabitur molestie suscipit libero at dapibus. Donec ac diam sit amet ante dignissim porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam placerat sollicitudin urna, eget viverra massa aliquet id. Aliquam eget malesuada turpis. Integer et cursus quam. Nam et rutrum arcu. Cras vulputate congue magna, sit amet accumsan dui consequat at.</p>
           </div>
-         
-    </div>
+          </div>
+        </div>
 
     <!-- End of About -->
 
@@ -94,8 +95,8 @@
 
   <div id="inspired" class="container-fluid p-5 text-center">
       <h3 class="pb-5">Get Inspired!</h3>
-
-      <div class="container">
+<!-- 
+      <div class="container"> -->
         <div class="row d-flex">
           <div class="gallery col-lg d-flex flex-column align-items-center">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -140,12 +141,16 @@
         <p class="text-center font-weight-bold mt-3 mb-0">Hover over the picture to pause the scrolling.</p> 
         <p class="text-center font-weight-bold"> Click the name to see each person's story and a video or picture.</p>
         </div>
-        <div class="join col-lg text-left">
-           <p>Gathering Strength, Inc., helps people with disabling conditions, such as stroke and spinal cord injuries, with access to fitness and wellness activities.</p>
-          <p>Click on a name to see some of their stories.  </p>
-           <div class="sign-up p-2">
-           <p class="sign-up-para p-2">Sign up to receive alerts about upcoming events and opportunities sponsored by Gathering Strength, Inc.</p>
-           <button type="button" class="btn btn-dark d-block mx-auto">Sign Up</button>
+        <!-- <div class="join col-lg text-left">
+           <p>Gathering Strength, Inc., helps people with disabling conditions, such as stroke and spinal cord injuries, have improved access to fitness and wellness activities.</p> -->
+
+<!-- Sign Up Form -->
+        <div class="alertcol col-lg align-self-center text-left p-2 mx-5">
+           <p>Gathering Strength Inc. helps people with disabling conditions, such as spinal cord injury and stroke, to engage in therapeutic physical activity.</p>
+           <p>Gathering Strength partners with Frazier Rehab Institute's Community Fitness and Wellness program to provide a wide variety of accessible exercise opportunitites.</p>
+           <p>Click the name in any picture to see more information including videos and pictures.</p>
+           <p>If you would like to receive alerts about upcoming opportunities, please contact us.</p>
+           <a type="button" class="alertbutton btn btn-dark btn-sm mx-auto" href="#contact" role="button">Get Alerts</a>
           </div>
         </div>
   </div>
@@ -160,12 +165,44 @@
   </div>
     <!-- End of Resources -->
 
-    <!-- Footer with Contact Info -->
+</div>  <!--  End of "pagewrap" -->
 
+    <!-- Footer with Contact Form -->
+  <footer class="sitefooter">
    <div id="contact" class="container-fluid">
-    <p>[Footer with Contact info goes here]</p>
-    </div>
+      <div class="row text-left pt-2 d-flex">
+        <div class="col-lg">
+        <form action="index.html" method="post">
+          <h4 class="formtitle">Contact Us:</h4>
+            <label  for="firstname">First Name:</label>
+            <input class="inputfield" type="text" id="firstname" name="user_firstname">
+            <label  for="lastname">Last Name:</label>
+            <input class="inputfield" type="text" id="lastname" name="user_lastname">
+        <p><label for="email">Email Address:</label>
+          <input class="inputfield" type="email" id="email" name="user_email"></p> 
+          <p class="formsubtitle"><label><strong>Description:</strong></label></p>
+          <label for="discondition" class="formchoice">Person W/Disabling Condition</label>
+          <input type="checkbox" id="discondition" value="discondition" name="discondition">
+          <label for="familyfriend" class="formchoice">Family/Friend</label>
+          <input type="checkbox" id="familyfriend" value="familyfriend" name="familyfriend">
+          <label for="healthcare" class="formchoice">Healthcare Professional</label>
+          <input type="checkbox" id="healthcare" value="healthcare" name="healthcare">
+        <p class="alerts"> <label for="alerts" class="alerts">Please send me Alerts</label>
+          <input type="checkbox" id="alerts" value="alerts" name="alerts">
+        <button type="submit" class="btn btn-dark d-block">Submit</button></p>
+        </form>
+      </div>
+      <div class="contactinfo col-lg">
+        <p>Gathering Strength, Inc.</p>
+        <P>1000 Roadster Ave</P>
+        <p>Louisville, KY  40206</p>
+        <p>502-777-5555</p>
+        <p>gatheringstrengthinc@gmail.com</p>
 
+      </div>
+
+    </div>
+  </footer>
 
     <!-- End of Footer -->
 

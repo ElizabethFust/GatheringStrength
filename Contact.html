@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../normalize.css"/>
+        <link rel="stylesheet" href="css/style.css"  type="text/css"/>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Racing+Sans+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600i" rel="stylesheet"> 
+
+    <title>GS Contact</title>
+</head>
+
+ <body>
+     <!-- Navbar -->
+
+   <nav class="sticky navbar navbar-light d-flex p-2">
+       <!-- <div id="circle" class="navbar-brand ml-4">
+          <div id="circle">
+              <div id="increase-wrapper">
+                      <div class="crescentLarge"></div>
+                      <div class="crescentMed"></div>
+                      <div class="crescentSmall"></div>
+                      </div>
+              </div>
+              </div> -->
+      <ul class="wrapper d-flex align-items-start flex-column p-2 list-unstyled">
+        <li>  <div id="circle">
+                  <!-- <div id="increase-wrapper">
+                          <div class="crescentLarge"></div>
+                          <div class="crescentMed"></div>
+                          <div class="crescentSmall"></div>
+                          </div> -->
+                  </div>
+                  </div></li>
+        <li><a class="heading navbar-brand ml-5" href="index.html">Gathering Strength</a></li>
+        <li><h3 class="subtitle ml-5 pl-4">For living your best life</h3></li>
+      </ul>
+      <div class="container-nav d-inline-flex p-2">
+        <ul class="d-inline-flex p-2 list-unstyled list-inline flex-column flex-sm-row"> 
+          <li><a class="btn btn-dark ml-2 mb-1" href="index.html" role="button">About</a></li>
+          <li><div class="btn-group ml-2">
+              <a type="button" class="btn btn-dark mb-1" href="index.html" role="button">Get Inspired</a>
+             <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split mb-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+             </button>
+             <div class="dropdown-menu">
+              <a class="dropdown-item" href="testimonials.html">Stories/Video</a>
+              <div class="dropdown-divider"></div>
+            </div>
+          </div>
+           <li><a class="btn btn-dark ml-2 mb-1" href="#resources" role="button">Resources</a></li>
+           <li><a class="btn btn-dark ml-2 mb-1" href="contact.html" role="button">Contact Us</a></li>
+          <li><button type="button" class="btn btn btn-light ml-2">Support the Mission!</button></li>
+        </ul> 
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Contact Form -->
+
+    <div id="contact" class="contactform container-fluid">
+           <!-- <div class="row text-left pt-2 d-flex">
+             <div class="col-lg"> -->
+             <form action="#" method="post">
+               <h4 class="formtitle">Contact Us and Sign Up for Alerts</h4>
+               <fieldset>
+                  <legend>Please send me Alerts:</legend>
+                        
+                        <label  for="alrtfirstname">First Name:</label>
+                        <input class="inputfield" type="text" id="alrtfirstname" name="user_firstname">
+                      
+                        <label  for="alrtlastname">Last Name:</label>
+                        <input class="inputfield" type="text" id="alrtlastname" name="user_lastname">
+                  
+                    <p><label for="alrtemail">Email Address:</label>
+                      <input class="inputfield" type="email" id="alrtemail" name="user_email"></p> 
+
+                      <label  for="streetaddress">Street Address:</label>
+                        <input class="inputfield" type="text" id="streetaddress" name="street_address">
+                      
+                        <label  for="city">City:</label>
+                        <input class="inputfield" type="text" id="city" name="user_city">
+
+                       <p><label  for="state">State:</label>
+                        <input class="inputfield" type="text" id="state" name="user_state"></p> 
+                      
+                        <label  for="zip">Zip Code:</label>
+                        <input class="inputfield" type="text" id="zip" name="user_zip">
+
+                        <p class="formsubtitle"><label><strong>Description:</strong></label></p>
+             
+                        <input type="checkbox" id="discondition" value="discondition" name="discondition">
+                        <label for="discondition" class="formchoice">Person W/Disabling Condition</label>
+                        
+                      
+                        <input type="checkbox" id="familyfriend" value="familyfriend" name="familyfriend">
+                        <label for="familyfriend" class="formchoice">Family/Friend</label>
+                        
+                        <input type="checkbox" id="healthcare" value="healthcare" name="healthcare">
+                        <label for="healthcare" class="formchoice">Healthcare Professional</label>
+                       
+                      <button type="submit" class="alertButton btn btn-dark d-block m-2">Send Me Alerts</button></p>
+                </fieldset>
+          
+               <fieldset>
+                <legend>Contact Us:</legend>
+                 <label  for="cntfirstname">First Name:</label>
+                 <input class="cntinputfield" type="text" id="cntfirstname" name="user_firstname">
+                
+                 <label  for="cntlastname">Last Name:</label>
+                 <input class="cntinputfield" type="text" id="cntlastname" name="user_lastname">
+            
+             <p><label for="cntemail">Email Address:</label>
+               <input class="cntinputfield" type="email" id="cntemail" name="user_email"></p> 
+             
+              <p></p><label for="contactarea" class="contactarea">Send us a message:</label></p>
+               <p><textarea id="contactarea" name="contactarea"></textarea></p>
+             
+               <button type="submit" id="submitbutton" class="btn btn-dark d-block m-2">Submit</button></p>
+              </fieldset>
+          </form>
+              
+        </div>

@@ -31,5 +31,22 @@
 
 // $('.crescentLarge').hide().delay(1500).fadeIn(800).delay(1000).fadeOut(500);
 
-$('#circle').hide().fadeIn(4000).fadeOut(2000).fadeIn(2000).fadeOut(2000).fadeIn(2000);
+// $('#circle').hide().fadeIn(4000).fadeOut(2000).fadeIn(2000).fadeOut(2000).fadeIn(2000);
 
+let submitbutton = document.getElementById('submitbutton');
+let input = document.getElementsByTagName('cntinputfield');
+
+
+submitbutton.addEventListener('click', function () {
+    alert('Thank you for contacting us');
+});
+    
+    
+    // for (let i=0; i < input.length; i += 1) {
+    // if (input === "") {
+    //     alert('Please provide email address');
+    // }
+    // } else {   
+    //     alert("Thank you firstname for submitting your information");
+    // }
+    // }); 

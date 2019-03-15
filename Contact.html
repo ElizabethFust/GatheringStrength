@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="../normalize.css"/>
+        <link rel="stylesheet" href="css/normalize.css"/>
         <link rel="stylesheet" href="css/style.css"  type="text/css"/>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -69,46 +69,48 @@
     <div id="contact" class="contactform container-fluid">
            <!-- <div class="row text-left pt-2 d-flex">
              <div class="col-lg"> -->
-             <form action="#" method="post">
-               <h4 class="formtitle">Contact Us and Sign Up for Alerts</h4>
+         <form action="#" method="post">
+             <h4 class="formtitle">Contact Us and Sign Up for Alerts</h4>
+             <div class="alertform">
                <fieldset>
                   <legend>Please send me Alerts:</legend>
                         
-                        <label  for="alrtfirstname">First Name:</label>
-                        <input class="inputfield" type="text" id="alrtfirstname" name="user_firstname">
+                   <label  for="alrtfirstname">First Name:</label>
+                   <input class="inputfield" type="text" id="alrtfirstname" name="user_firstname">
                       
-                        <label  for="alrtlastname">Last Name:</label>
+                    <label  for="alrtlastname">Last Name:</label>
                         <input class="inputfield" type="text" id="alrtlastname" name="user_lastname">
                   
-                    <p><label for="alrtemail">Email Address:</label>
-                      <input class="inputfield" type="email" id="alrtemail" name="user_email"></p> 
+                   <p><label for="alrtemail">Email Address:</label>
+                    <input class="inputfield" type="email" id="alrtemail" name="user_email"></p> 
 
-                      <label  for="streetaddress">Street Address:</label>
-                        <input class="inputfield" type="text" id="streetaddress" name="street_address">
+                   <label  for="streetaddress">Street Address:</label>
+                   <input class="inputfield" type="text" id="streetaddress" name="street_address">
                       
-                        <label  for="city">City:</label>
-                        <input class="inputfield" type="text" id="city" name="user_city">
+                   <label  for="city">City:</label>
+                   <input class="inputfield" type="text" id="city" name="user_city">
 
-                       <p><label  for="state">State:</label>
-                        <input class="inputfield" type="text" id="state" name="user_state"></p> 
+                  <p><label  for="state">State:</label>
+                   <input class="inputfield" type="text" id="state" name="user_state"></p> 
                       
-                        <label  for="zip">Zip Code:</label>
-                        <input class="inputfield" type="text" id="zip" name="user_zip">
+                  <label  for="zip">Zip Code:</label>
+                   <input class="inputfield" type="text" id="zip" name="user_zip">
 
-                        <p class="formsubtitle"><label><strong>Description:</strong></label></p>
+                   <p class="formsubtitle"><label><strong>Description:</strong></label></p>
              
-                        <input type="checkbox" id="discondition" value="discondition" name="discondition">
-                        <label for="discondition" class="formchoice">Person W/Disabling Condition</label>
+                   <input type="checkbox" id="discondition" value="discondition" name="discondition">
+                   <label for="discondition" class="formchoice">Person W/Disabling Condition</label>
                         
                       
-                        <input type="checkbox" id="familyfriend" value="familyfriend" name="familyfriend">
-                        <label for="familyfriend" class="formchoice">Family/Friend</label>
+                   <input type="checkbox" id="familyfriend" value="familyfriend" name="familyfriend">
+                  <label for="familyfriend" class="formchoice">Family/Friend</label>
                         
-                        <input type="checkbox" id="healthcare" value="healthcare" name="healthcare">
+                   <input type="checkbox" id="healthcare" value="healthcare" name="healthcare">
                         <label for="healthcare" class="formchoice">Healthcare Professional</label>
                        
-                      <button type="submit" class="alertButton btn btn-dark d-block m-2">Send Me Alerts</button></p>
-                </fieldset>
+                  <button type="submit" id="alertbutton" class="btn btn-dark d-block m-2">Send Me Alerts</button></p>
+              </fieldset>
+            </div>
           
                <fieldset>
                 <legend>Contact Us:</legend>
@@ -129,3 +131,12 @@
           </form>
               
         </div>
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+   <script src="JS/jquery-3.3.1.min.js"></script>
+   <script src="JS/GS.js"></script></script>
+</body>
+</html>

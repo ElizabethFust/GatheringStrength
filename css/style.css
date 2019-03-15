@@ -156,6 +156,10 @@ textarea {
 input {
     background-color: #FEFEE7;
 }
+/* THis isn't working.  Ask Mentors */
+input[type="text"]:hover {
+    background-color: white;
+}
 
 input[type="checkbox"]:checked+label {
     font-weight: bold;

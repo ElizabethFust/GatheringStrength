@@ -38,42 +38,46 @@
 
 let submitbutton = document.getElementById('submitbutton');
 let firstname = document.getElementById('cntfirstname');
-// let lastname = document.getElementById('cntlastname').value;
-// let email = document.getElementById('cntemail').value;
+let lastname = document.getElementById('cntlastname');
+let email = document.getElementById('cntemail');
 
 
-submitbutton.addEventListener('click', function () {
-    //   if (firstname === ""){
-//             alert("Please enter your first name");
-//       }
-//     //   else if (lastname ==="") {
-//     //         alert("Please enter your last name");
-//     //   }
-//     //   else if (email ==="") {
-//     //         alert("Please enter your email address");
-//     //   }
-//       else    {
+submitbutton.addEventListener('click', function (event) {
+    event.preventDefault();
+      if (firstname.value === ""){
+            alert("Please enter your first name");
+      }
+      else if (lastname.value ==="") {
+            alert("Please enter your last name");
+      }
+      else if (email.value ==="") {
+            alert("Please enter your email address");
+      }
+      else    
         alert('Thank you for contacting us ' + firstname.value + ".");
     });
     
-// $('#submitbutton').click(function () {
-//     var firstname = document.getElementById('cntfirstname');
-//     alert('Thank you for contacting us ' + firstname.val);
-// })
 
-$('#alertbutton').click(function() {
-    $('.alertform').slideUp(slow);
+
+$('#alertbutton').click(function(event) {
+    event.preventDefault();
+    $('.alertform').toggle(800);
    });
 
+ 
+
+// let input = getElementByTagName('cntinputfield[i]');
+// let submitbutton = document.getElementById('submitbutton');
+// let firstname = document.getElementById('cntfirstname');
 
 
-
-
-    // for (let i=0; i < input.length; i += 1) {
-    // if (input === "") {
-    //     alert('Please provide email address');
-    // }
-    // } else {   
-    //     alert("Thank you firstname for submitting your information");
-    // }
-    // }); 
+// submitbutton.addEventListener('click', function (event) {
+//   event.preventDefault();
+//     for (let i=0; i <= input.length; i += 1) {
+//     if (input.value === "") {
+//         alert('Please provide required information');
+//       } else {   
+//         alert("Thank you for submitting your information, " + firstname.value);
+//       }
+//     }
+//     }); 

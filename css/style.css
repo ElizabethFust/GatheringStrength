@@ -13,12 +13,22 @@ body {
      font-family: 'Roboto', sans-serif;
  }
 
-footer {
-    background: #72C4B9;
-}
+
+
 /*===================
  Base Layout Styles
  ===================*/
+
+ .goal, .activities {
+    list-style-type: circle;
+    font-family: "Roboto", sans-serif;
+}
+
+.resources {
+    font-family: "Roboto", sans-serif;
+    list-style-type: disc;
+    margin-left: 1em;
+}
 
     /* Navbar */
 
@@ -52,10 +62,12 @@ footer {
     position: relative;
             }
 
+
 .navbar {
     height: 10em;
     background:#72C4B9; /*linear-gradient(#72C4B9, #A4D0C4); /*dance with you by stephen caver on Coulorlovers*/
 }
+
 
  .subtitle {
     font-family: 'Open Sans', sans-serif; /*'Racing Sans One', cursive;*/
@@ -93,7 +105,7 @@ footer {
         background:#A4D0C4;
         font-size: 1.2em;
         width: 80%;
-        padding: 1em;
+        padding: 2em;
         border-radius: 3px;
     }
 
@@ -104,7 +116,15 @@ footer {
 
 /*sticky footer*/
 
+footer {
+    background: #72C4B9;
+}
 
+.sitefooter {
+    font-weight: bold;
+    width: 100%;
+}
+    
 
 /*Contact and Sign Up Form*/
 
@@ -145,7 +165,9 @@ legend {
 }
 
 label, input {
-    margin: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
 }
 
 textarea {
@@ -161,10 +183,14 @@ input[type="text"]:hover {
     background-color: white;
 }
 
-input[type="checkbox"]:checked+label {
-    font-weight: bold;
+/* input[type="checkbox"]:checked+label {
+    font-weight: bold; */
 }
 
+input[type="checkbox"] {
+    background-color: #FEFEE7!important;
+    margin-right: 0!important;
+}
 
 .formsubtitle {
     margin: 0;
@@ -192,11 +218,15 @@ input[type="checkbox"]:checked+label {
     }
 }
 
-@media only screen and (min-width: 32em) {
+@media only screen and (max-width: 32em) {
     .heading {
         font-size: 1.5em !important;
         padding-left: 0;
     }
+    #about {
+        margin-top: 6em;
+    }
+
 }
 
 

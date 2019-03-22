@@ -38,9 +38,6 @@ body {
     z-index: 1;
 }
 
-/* #circle {
-    display: none;
-} */
 
 .heading {
        font-family: 'Open Sans', sans-serif; /*'Racing Sans One', cursive; /*'Open Sans', sans-serif;*/
@@ -112,6 +109,7 @@ body {
     .alertbutton {
         margin: 0 auto;
     }
+
 /*Resources*/
 
 /*sticky footer*/
@@ -123,7 +121,10 @@ footer {
 .sitefooter {
     font-weight: bold;
     width: 100%;
+
 }
+
+
     
 
 /*Contact and Sign Up Form*/
@@ -178,13 +179,17 @@ textarea {
 input {
     background-color: #FEFEE7;
 }
-/* THis isn't working.  Ask Mentors */
+
 input[type="text"]:hover {
     background-color: white;
 }
 
-/* input[type="checkbox"]:checked+label {
-    font-weight: bold; */
+input[type="email"]:hover {
+    background-color: white;
+}
+
+input[type="checkbox"]:checked+label {
+    font-weight: bold;
 }
 
 input[type="checkbox"] {
@@ -196,15 +201,45 @@ input[type="checkbox"] {
     margin: 0;
 }
 
+/*Testimonials page*/
 
+
+.video-wrapper {
+    width: 700px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 3em;
+    padding-left: 2em;
+}
+
+.video-container {
+    margin-bottom: 1em;
+    position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.nameheader {
+    margin-left: 5em;
+}
 
 /*===================
  Media Queries
  ===================*/
 
-/* Medium devices (landscape tablets) and up */
+/* No greater than 75 em; no less than 45em */
  
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 75em) and (min-width: 45em) {
     #circle {
         display: none;
     }
@@ -216,35 +251,48 @@ input[type="checkbox"] {
     #subheading {
         color: black;
     }
+
+    .heading {
+        font-size: 3em !important;
+    }
+
+    .header-inspired  {
+        margin-top: 10em;
+    }
+
+    #contact {
+        margin-top: 6em;
+    }
 }
 
-@media only screen and (max-width: 32em) {
+@media only screen and (max-width: 45em) {
     .heading {
-        font-size: 1.5em !important;
+        font-size: 3em!important;
         padding-left: 0;
     }
     #about {
         margin-top: 6em;
     }
 
+    #contact {
+        margin-top: 15em;
+    }
+
+    .header-inspired {
+        margin-top: 6em;
+    }
 }
 
 
-@media only screen and (max-width: 47em) {
-  
-  .heading {
-      font-size: 3em !important;
-  }
-
- }
-
- @media only screen and (min-width: 48em) {
+ @media only screen and (min-width: 46em) {
 
   #about {
       padding-top: 10em;
       margin-left: 0;
       margin-right: 0;
   }
+
+
 
     .heading {
         font-size: 3.5em !important;
@@ -270,14 +318,9 @@ input[type="checkbox"] {
         align-items: center;
         justify-content: center;
         background-image: url(../Images/dreamstime_m_96251115.jpg);
-        /* background-repeat: no-repeat;
-        background-attachment: scroll; */
         background-position: center;
         opacity: .6;
-        /* -webkit-background-size: cover;
-        -moz-background-size: cover; */
         background-size: cover;
-        /* -o-background-size: cover; */
         min-height: 100vh;
         }
 
@@ -295,51 +338,9 @@ input[type="checkbox"] {
             width: 100px;
             /*background-color: #EB6841;#FFD599 Sunset by Alpen on Colourlovers. also tried #EB6841 caribic sun by DesignJunkee on Colourlovers*/
             border-radius: 50%;
-            background: /*linear-gradient(to right, #D1E7D6, 25%, #EB6841);*/ linear-gradient(90deg, /* #FEFEE7 #D1E7D6*/#72C4B9, #EB6841 );
+            background: linear-gradient(90deg, /* #FEFEE7 #D1E7D6*/#72C4B9, #EB6841 );
             /* opacity: 0; */
             position: absolute;
             z-index: 1;
         }
-        
-            .crescentSmall {
-                position: absolute;
-                height: 50px;
-                width: 50px;
-                opacity: .2;
-                border-radius: 50%;
-                border: 12px solid transparent;
-                border-right-color: #EB6841;
-                z-index: auto;
-                top: 50%;
-                transform: translatey(-52%);
-                left: 11%;
-            }  
-            
-                .crescentMed {
-                position: absolute;
-                height: 75px;
-                width: 75px;
-                opacity: .4;
-                border-radius: 50%;
-                border: 14px solid transparent;
-                border-right-color: 0,-1em, 1em,#EB6841;
-                z-index: auto;
-                top: 50%;
-                transform: translatey(-50%);
-                right: 21%;
-            }
-            
-                .crescentLarge {
-                position: absolute;
-                height: 120px;
-                width: 120px;
-                opacity: .4;
-                border-radius: 50%;
-                border: 16px solid transparent;
-                border-right-color: #EB6841;
-                z-index: auto;
-                top: 50%;
-                transform: translatey(-50%);
-                right: 6%;
-            }
  }

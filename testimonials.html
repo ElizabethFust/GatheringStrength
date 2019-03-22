@@ -19,85 +19,80 @@
 <body>
     <!-- Navbar -->
     <nav class="sticky navbar navbar-light d-flex p-2">
-            <!-- <div id="circle" class="navbar-brand ml-4">
-               <div id="circle">
-                   <div id="increase-wrapper">
-                           <div class="crescentLarge"></div>
-                           <div class="crescentMed"></div>
-                           <div class="crescentSmall"></div>
-                           </div>
-                   </div>
-                   </div> -->
-           <ul class="wrapper d-flex align-items-start flex-column p-2 list-unstyled">
-             <li>  <div id="circle">
-                       <!-- <div id="increase-wrapper">
-                               <div class="crescentLarge"></div>
-                               <div class="crescentMed"></div>
-                               <div class="crescentSmall"></div>
-                               </div> -->
-                       </div>
-                       </div></li>
-             <li><a class="heading navbar-brand ml-5" href="Index.html">Gathering Strength</a></li>
-             <li><h3 class="subtitle ml-5 pl-4">For living your best life</h3></li>
-         </ul>
-           <div class="container-nav d-inline-flex p-2">
-             <ul class="d-inline-flex p-2 list-unstyled list-inline"> 
-             <li><a class="btn btn-outline-dark" href="#about" role="button">About</a></li>
-             <li><div class="btn-group ml-2">
-                 <a type="button" class="btn btn-outline-dark" href="#inspired" role="button">Get Inspired</a>
-                 <button type="button" class="btn btn-outline-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   <span class="sr-only">Toggle Dropdown</span>
-                 </button>
-                 <div class="dropdown-menu">
-                   <a class="dropdown-item" href="testimonials.html">Stories/Video</a>
-                   <div class="dropdown-divider"></div>
-                 </div>
-               </div>
-             <li><a class="btn btn-outline-dark ml-2" href="#resources" role="button">Resources</a></li>
-             <li><a class="btn btn-outline-dark ml-2" href="#contact" role="button">Contact Us</a></li>
-             <li><button type="button" class="btn btn btn-light ml-2">Support the Mission!</button></li>
-           </ul> 
+      <ul class="wrapper d-flex align-items-start flex-column p-2 list-unstyled">
+       <li>  <div id="circle"></div></li>
+       <li><a class="heading navbar-brand ml-5-sm" href="#">Gathering Strength</a></li>
+       <li><h3 class="subtitle ml-5-sm pl-4">For living your best life</h3></li>
+     </ul>
+     <div class="container-nav d-inline-flex p-2">
+       <ul class="d-inline-flex p-2 list-unstyled list-inline flex-column flex-sm-row"> 
+         <li><a class="btn btn-dark ml-2 mb-1" href="#about" role="button">About</a></li>
+         <li><div class="btn-group ml-2">
+             <a type="button" class="btn btn-dark mb-1" href="#inspired" role="button">Get Inspired</a>
+            <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split mb-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+             <a class="dropdown-item" href="testimonials.html">Stories/Video</a>
+             <div class="dropdown-divider"></div>
            </div>
-         </nav>
-   <!-- End of Navbar -->
+         </div>
+          <li><a class="btn btn-dark ml-2 mb-1" href="#resources" role="button">Resources</a></li>
+          <li><a class="btn btn-dark ml-2 mb-1" href="contact.html" role="button">Contact Us</a></li>
+         <li><button type="button" class="btn btn btn-light ml-2">Support the Mission!</button></li>
+       </ul> 
+     </div>
+   </nav>
+<!-- End of Navbar -->
 
-       <!-- Header-->
-       <div class="header-inspired container-fluid pt-5 pb-2">
-          <h1 id="inspired-heading" class="text-center">Get Inspired</h1>
+<!-- Header-->
+ <div class="header-inspired container-fluid pt-5 pb-2">
+    <h1 id="inspired-heading" class="text-center font-weight-bold">Get Inspired</h1>
           </div>
 
 <!-- Testimonials.  Videos and brief info on people -->
-<h2 class="ml-5 pl-5 pb-2">Tom</h2>
-<div class="container d-flex flex-row justify-content-center">
-    <div class="video m-4 p-4">
-            <iframe width="560" height="315" volume=0 src="https://www.youtube.com/embed/ybSyfYatr70" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h4><strong>BEFORE:</strong>  Tom Standing</h4>
-            <p>When Tom first began exercising, he had a hard time standing on his own.</p>
-          </div>
-          <div class="video m-4 p-4">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ke9QIYMZcq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h4><strong>AFTER:</strong>  Tom Standing</h4>
-            <p>After exercising for __ months, Tom is able to stand with resistance.  Note the bands attached to weights providing resistance when he stands.</p>
-          </div>
-    </div>
 
-    <h2 class="ml-5 pl-5">Raymond</h2>
-    <div class="container d-flex flex-row justify-content-center">
-        <div class="video mt-4 pt-4">
+<!--  -->
+<h2 class="nameheader ml-5 pl-5">Tom</h2>
+<!-- <div class="vidcontainer"> -->
+<!-- 
+  container d-flex flex-row justify-content-start ml-5 pl-5" -->
+
+    <div class="video-wrapper">  
+      <div class="video-container">
+            <iframe width="560" height="315" volume=0 src="https://www.youtube.com/embed/ybSyfYatr70" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+            <h4><strong>BEFORE:</strong>  Tom Standing</h4>
+            <p>Tom has a C4 incomplete spinal cord injury. When Tom first began exercising, he had a hard time standing on his own.</p>
+    </div>
+    <div class="video-wrapper">
+      <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ke9QIYMZcq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+            <h4><strong>AFTER:</strong>  Tom Standing</h4>
+            <p>After exercising for six months in the Community Fitness and Wellness gym at Frazier Rehab Institute, Tom is able to stand, even with resistance: note the bands over each shoulder, which are attached to weights providing resistance when he stands.</p>
+   </div>
+<!-- </div> -->
+
+    <h2 class="nameheader ml-5 pl-5">Raymond</h2>
+    <div class="video-wrapper">
+        <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/I2GY5H5ItmE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
                 <h4>Functional Electrical Stimulation and cardiovascular exercise</h4>
                 <p>Raymond had a stroke in 2016.</p>
-              </div>
-        </div>
+        
+      </div>
 
-        <h2 class="ml-5 pl-5">Liz</h2>
-        <div class="container d-flex flex-row justify-content-center">
-            <div class="video mt-4 pt-4">
+    <h2 class="nameheader ml-5 pl-5">Liz</h2>
+    <div class="video-wrapper">
+        <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Pa0JUhQHaEA?start=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
                     <h4>Weight training and Cardiovascular training</h4>
                     <p>Liz is a T7 paraplegic.  She suffered a spinal cord stroke in 2006.  Once she was discharged from outpatient therapy, she realized that she needed to commmit to engaging in therapeutic exercise in order to maintain what she gained in outpatient therapy, and to ward off risk factors that lead to cardiovascular disease and diabetes.</p>
-                  </div>
-            </div>
+         
+     </div>
 
  <!--End of Testimonials  -->
 

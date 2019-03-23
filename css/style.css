@@ -311,6 +311,7 @@ input[type="checkbox"] {
             font-weight: bold;
             display: flex;
             margin-bottom: 90px; 
+            margin-right: .75em;
             }
 
      .header {
@@ -336,9 +337,8 @@ input[type="checkbox"] {
         #circle {
             height: 100px;
             width: 100px;
-            /*background-color: #EB6841;#FFD599 Sunset by Alpen on Colourlovers. also tried #EB6841 caribic sun by DesignJunkee on Colourlovers*/
             border-radius: 50%;
-            background: linear-gradient(90deg, /* #FEFEE7 #D1E7D6*/#72C4B9, #EB6841 );
+            background: linear-gradient(90deg, #72C4B9, #EB6841 );
             /* opacity: 0; */
             position: absolute;
             z-index: 1;

@@ -19,17 +19,6 @@ body {
  Base Layout Styles
  ===================*/
 
- .goal, .activities {
-    list-style-type: circle;
-    font-family: "Roboto", sans-serif;
-}
-
-.resources {
-    font-family: "Roboto", sans-serif;
-    list-style-type: disc;
-    margin-left: 1em;
-}
-
     /* Navbar */
 
 .sticky {
@@ -76,6 +65,19 @@ body {
     color: #0F0F0D;
 }
 
+/* End Navbar */
+
+.goal, .activities {
+    list-style-type: circle;
+    font-family: "Roboto", sans-serif;
+}
+
+.resources {
+    font-family: "Roboto", sans-serif;
+    list-style-type: disc;
+    margin-left: 1em;
+}
+
 #secondary-heading {
     display: none;
 }
@@ -87,8 +89,6 @@ body {
 .sign-up {
     border-radius: 2%;
 }
-/* Header and background image*/
-
 
 
 /*Get Inspired*/
@@ -110,9 +110,7 @@ body {
         margin: 0 auto;
     }
 
-/*Resources*/
-
-/*sticky footer*/
+/*footer*/
 
 footer {
     background: #72C4B9;
@@ -122,10 +120,7 @@ footer {
     font-weight: bold;
     width: 100%;
 
-}
-
-
-    
+}   
 
 /*Contact and Sign Up Form*/
 
@@ -134,7 +129,6 @@ footer {
     justify-content: center;
     width: 100%;
     margin: 2em;
-    
 }
 
 form {
